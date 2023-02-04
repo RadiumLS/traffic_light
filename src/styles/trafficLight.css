@@ -24,15 +24,94 @@
   height: 0;
   margin: auto 0;
 }
+@keyframes redBright {
+  0% {
+    background-color: red;
+    border-color: red;
+  }
+  33% {
+    background-color: red;
+    border-color: red;
+  }
+  34% {
+    background-color: black;
+    border-color: black;
+  }
+  100% {
+    background-color: black;
+    border-color: black;
+  }
+}
+@keyframes yellowBright {
+  0% {
+    background-color: black;
+    border-color: black;
+  }
+  33% {
+    background-color: black;
+    border-color: black;
+  }
+  34% {
+    background-color: yellow;
+    border-color: yellow;
+  }
+  66% {
+    background-color: yellow;
+    border-color: yellow;
+  }
+  67% {
+    background-color: black;
+    border-color: black;
+  }
+  100% {
+    background-color: black;
+    border-color: black;
+  }
+}
+@keyframes greenBright {
+  0% {
+    background-color: black;
+  }
+  66% {
+    background-color: black;
+  }
+  67% {
+    background-color: green;
+  }
+  89% {
+    background-color: green;
+  }
+  90% {
+    background-color: black;
+  }
+  92% {
+    background-color: green;
+  }
+  94% {
+    background-color: black;
+  }
+  96% {
+    background-color: green;
+  }
+  98% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
 .red-light{
   background-color: red;
   border-color: red;
+  animation: redBright 60s infinite;
 }
 .yellow-light{
   background-color: yellow;
   border-color: yellow;
+  animation: yellowBright 60s infinite;
 }
 .green-light{
   background-color: green;
   border-color: green;
+  animation: greenBright 60s infinite;
 }
