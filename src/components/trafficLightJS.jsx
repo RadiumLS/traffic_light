@@ -3,7 +3,7 @@ import '../styles/trafficLight.css';
 
 const lightConfig = [{
   start: 0,
-  end: 2000,
+  end: 20000,
   color: 'red',
 },{
   start: 20001,
