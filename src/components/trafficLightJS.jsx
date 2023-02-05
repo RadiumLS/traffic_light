@@ -39,13 +39,11 @@ const TrafficLightJS = function() {
   const [blink, setBlink] = useState(false);
   useEffect(() => {
     if (running) {
-      setTcSec(55000);
+      setTcSec(0);
       const id = setInterval(() => {
-        if (tcSec > 60000) {
-          setTcSec(0);
-        } else {
-          setTcSec((originTcSec) => originTcSec + 500);
-        }
+        setTcSec((originTcSec) => {
+          return originTcSec > 60000 ? 0 : originTcSec + 500;
+        });
       }, 500);
       return () => clearInterval(id);
     }
