@@ -17,6 +17,7 @@
   display: flex;
 }
 .traffic-light {
+  background-color: black;
   border: 1px solid black;
   border-radius: 100%;
   width: 100%;
